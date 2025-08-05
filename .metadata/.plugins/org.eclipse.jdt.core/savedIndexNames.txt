@@ -1,0 +1,20 @@
+INDEX VERSION 1.134+D:\HUONG\Testing\Automation-Practice\Java\SeleniumJavaFW\.metadata\.plugins\org.eclipse.jdt.core
+3805985812.index
+1414929317.index
+551343943.index
+1865797976.index
+330055556.index
+864498817.index
+2127744642.index
+3888828876.index
+105764351.index
+1806248964.index
+2044176460.index
+2406102726.index
+2712856357.index
+2166664538.index
+1284690592.index
+471586328.index
+3716777220.index
+1182551063.index
+843153408.index

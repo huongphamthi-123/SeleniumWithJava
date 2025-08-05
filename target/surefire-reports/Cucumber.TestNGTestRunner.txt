@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Cucumber.TestNGTestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 52.714 s <<< FAILURE! - in Cucumber.TestNGTestRunner
+Cucumber.TestNGTestRunner.runScenario  Time elapsed: 13.437 s  <<< FAILURE!
+java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email o password.]
+
