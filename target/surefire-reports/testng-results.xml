@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="7" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-07T11:52:44 ICT" name="Suite" finished-at="2025-08-07T11:53:37 ICT" duration-ms="52913">
+  <suite started-at="2025-08-07T15:25:09 ICT" name="Suite" finished-at="2025-08-07T15:26:22 ICT" duration-ms="72557">
     <groups>
       <group name="ErrorHandling">
         <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" name="submitOrder" class="HuongTestingPractice.Tests.SubmitOrderTest"/>
       </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2025-08-07T11:52:44 ICT" name="Test1" finished-at="2025-08-07T11:53:37 ICT" duration-ms="52913">
-      <class name="HuongTestingPractice.Tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:52:45 ICT" name="launchApplication" finished-at="2025-08-07T11:52:54 ICT" duration-ms="9209" status="PASS">
+    <test started-at="2025-08-07T15:25:09 ICT" name="Test2" finished-at="2025-08-07T15:25:38 ICT" duration-ms="29400">
+      <class name="HuongTestingPractice.Tests.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T15:25:09 ICT" name="launchApplication" finished-at="2025-08-07T15:25:21 ICT" duration-ms="12062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:52:54 ICT" name="submitOrder" data-provider="GetData" finished-at="2025-08-07T11:53:00 ICT" duration-ms="5987" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T15:25:21 ICT" name="LoginErrorValidation" finished-at="2025-08-07T15:25:25 ICT" duration-ms="3418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T15:25:25 ICT" name="tearDown" finished-at="2025-08-07T15:25:25 ICT" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T15:25:25 ICT" name="launchApplication" finished-at="2025-08-07T15:25:30 ICT" duration-ms="4703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T15:25:30 ICT" name="ProductErrorValidation" finished-at="2025-08-07T15:25:38 ICT" duration-ms="7908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T15:25:38 ICT" name="tearDown" finished-at="2025-08-07T15:25:38 ICT" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- HuongTestingPractice.Tests.ErrorValidation -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-08-07T15:25:09 ICT" name="Test1" finished-at="2025-08-07T15:26:22 ICT" duration-ms="72557">
+      <class name="HuongTestingPractice.Tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:25:09 ICT" name="launchApplication" finished-at="2025-08-07T15:25:36 ICT" duration-ms="26203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:25:36 ICT" name="submitOrder" data-provider="GetData" finished-at="2025-08-07T15:25:42 ICT" duration-ms="5950" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,15 +53,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:53:00 ICT" name="tearDown" finished-at="2025-08-07T11:53:01 ICT" duration-ms="1160" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:25:42 ICT" name="tearDown" finished-at="2025-08-07T15:25:44 ICT" duration-ms="1850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:53:01 ICT" name="launchApplication" finished-at="2025-08-07T11:53:16 ICT" duration-ms="14788" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:25:44 ICT" name="launchApplication" finished-at="2025-08-07T15:26:08 ICT" duration-ms="24273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:53:16 ICT" name="submitOrder" data-provider="GetData" finished-at="2025-08-07T11:53:24 ICT" duration-ms="8039" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:26:08 ICT" name="submitOrder" data-provider="GetData" finished-at="2025-08-07T15:26:13 ICT" duration-ms="5266" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,135 +72,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:53:24 ICT" name="tearDown" finished-at="2025-08-07T11:53:25 ICT" duration-ms="1548" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:26:13 ICT" name="tearDown" finished-at="2025-08-07T15:26:13 ICT" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:53:25 ICT" name="launchApplication" finished-at="2025-08-07T11:53:35 ICT" duration-ms="9080" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:26:13 ICT" name="launchApplication" finished-at="2025-08-07T15:26:20 ICT" duration-ms="6126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:53:35 ICT" name="OrderHistoryTest" finished-at="2025-08-07T11:53:37 ICT" depends-on-methods="HuongTestingPractice.Tests.SubmitOrderTest.submitOrder" duration-ms="2195" status="PASS">
+        <test-method signature="OrderHistoryTest()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:26:20 ICT" name="OrderHistoryTest" finished-at="2025-08-07T15:26:21 ICT" depends-on-methods="HuongTestingPractice.Tests.SubmitOrderTest.submitOrder" duration-ms="1779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T11:53:37 ICT" name="tearDown" finished-at="2025-08-07T11:53:37 ICT" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@23e84203]" started-at="2025-08-07T15:26:21 ICT" name="tearDown" finished-at="2025-08-07T15:26:22 ICT" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- HuongTestingPractice.Tests.SubmitOrderTest -->
     </test> <!-- Test1 -->
-    <test started-at="2025-08-07T11:52:44 ICT" name="Test2" finished-at="2025-08-07T11:53:37 ICT" duration-ms="52324">
-      <class name="HuongTestingPractice.Tests.ErrorValidation">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:52:44 ICT" name="launchApplication" finished-at="2025-08-07T11:52:50 ICT" duration-ms="5336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:52:50 ICT" name="LoginErrorValidation" finished-at="2025-08-07T11:53:14 ICT" duration-ms="24546" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email o password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email o password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at HuongTestingPractice.Tests.ErrorValidation.LoginErrorValidation(ErrorValidation.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:53:14 ICT" name="tearDown" finished-at="2025-08-07T11:53:14 ICT" duration-ms="274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:53:14 ICT" name="launchApplication" finished-at="2025-08-07T11:53:20 ICT" duration-ms="5859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:53:20 ICT" name="LoginErrorValidation" finished-at="2025-08-07T11:53:22 ICT" duration-ms="1913" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email o password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email o password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at HuongTestingPractice.Tests.ErrorValidation.LoginErrorValidation(ErrorValidation.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:53:23 ICT" name="tearDown" finished-at="2025-08-07T11:53:23 ICT" duration-ms="720" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:53:23 ICT" name="launchApplication" finished-at="2025-08-07T11:53:31 ICT" duration-ms="7533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:53:31 ICT" name="ProductErrorValidation" finished-at="2025-08-07T11:53:35 ICT" duration-ms="4499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@446a1e84]" started-at="2025-08-07T11:53:35 ICT" name="tearDown" finished-at="2025-08-07T11:53:37 ICT" duration-ms="1097" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- HuongTestingPractice.Tests.ErrorValidation -->
-    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
