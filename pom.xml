@@ -203,12 +203,24 @@
 						<target>21</target>
 						<fork>true</fork>
 						<compilerArgs>
-							<arg>--add-exports</arg>
 							<arg>
-								jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED</arg>
-							<arg>--add-exports</arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED</arg>
 							<arg>
-								jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</arg>
+							<arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED</arg>
+							<arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</arg>
+							<arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED</arg>
+							<arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED</arg>
+							<arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
+							<arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</arg>
+							<arg>
+								--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED</arg>
 						</compilerArgs>
 					</configuration>
 				</plugin>
