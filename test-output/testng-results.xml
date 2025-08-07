@@ -1,39 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results retried="1" ignored="1" total="7" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-04T17:37:46 ICT" name="Default suite" finished-at="2025-08-04T17:38:22 ICT" duration-ms="36019">
+  <suite started-at="2025-08-07T10:45:01 ICT" name="Suite" finished-at="2025-08-07T10:45:44 ICT" duration-ms="43252">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@79d8407f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="ErrorHandling">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" name="submitOrder" class="HuongTestingPractice.Tests.SubmitOrderTest"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2025-08-04T17:37:46 ICT" name="Default test" finished-at="2025-08-04T17:38:22 ICT" duration-ms="36019">
-      <class name="Cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@79d8407f]" started-at="2025-08-04T17:37:46 ICT" name="setUpClass" finished-at="2025-08-04T17:37:47 ICT" duration-ms="893" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@25f61c2c]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-08-07T10:45:01 ICT" name="Test2" finished-at="2025-08-07T10:45:41 ICT" duration-ms="39699">
+      <class name="HuongTestingPractice.Tests.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:01 ICT" name="launchApplication" finished-at="2025-08-07T10:45:19 ICT" duration-ms="17704" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@79d8407f]" started-at="2025-08-04T17:37:47 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T17:37:55 ICT" duration-ms="8384" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Title of your scenario outline"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Error validation"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:19 ICT" name="LoginErrorValidation" finished-at="2025-08-07T10:45:21 ICT" duration-ms="2717" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email o password.]]]>
@@ -46,51 +27,152 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at HuongTestingPractice.StepDefinition.StepDefinitions.something_message_is_displayed(StepDefinitions.java:62)
-at ✽."Incorrect email o password." message is displayed(file:///D:/HUONG/Testing/Automation-Practice/Java/SeleniumJavaFW/src/test/java/cucumber/ErrorValidation.feature:11)
+at HuongTestingPractice.Tests.ErrorValidation.LoginErrorValidation(ErrorValidation.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@79d8407f]" started-at="2025-08-04T17:37:55 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T17:38:07 ICT" duration-ms="12093" status="PASS">
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:21 ICT" name="tearDown" finished-at="2025-08-07T10:45:23 ICT" duration-ms="1750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:23 ICT" name="launchApplication" finished-at="2025-08-07T10:45:29 ICT" duration-ms="5603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:29 ICT" name="LoginErrorValidation" finished-at="2025-08-07T10:45:30 ICT" duration-ms="1380" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email o password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email o password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at HuongTestingPractice.Tests.ErrorValidation.LoginErrorValidation(ErrorValidation.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:30 ICT" name="tearDown" finished-at="2025-08-07T10:45:31 ICT" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:31 ICT" name="launchApplication" finished-at="2025-08-07T10:45:37 ICT" duration-ms="5794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:37 ICT" name="ProductErrorValidation" finished-at="2025-08-07T10:45:40 ICT" duration-ms="3371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.ErrorValidation@64e7619d]" started-at="2025-08-07T10:45:40 ICT" name="tearDown" finished-at="2025-08-07T10:45:41 ICT" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- HuongTestingPractice.Tests.ErrorValidation -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-08-07T10:45:01 ICT" name="Test1" finished-at="2025-08-07T10:45:44 ICT" duration-ms="43252">
+      <class name="HuongTestingPractice.Tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:01 ICT" name="launchApplication" finished-at="2025-08-07T10:45:12 ICT" duration-ms="11123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:12 ICT" name="submitOrder" data-provider="GetData" finished-at="2025-08-07T10:45:18 ICT" duration-ms="6058" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of Submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from Ecommerce Website"]]>
+                <![CDATA[{password=Iamking@000, product=ZARA COAT 3, email=Huong@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@79d8407f]" started-at="2025-08-04T17:38:07 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-04T17:38:22 ICT" duration-ms="14417" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:18 ICT" name="tearDown" finished-at="2025-08-07T10:45:20 ICT" duration-ms="1204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:20 ICT" name="launchApplication" finished-at="2025-08-07T10:45:27 ICT" duration-ms="7669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:27 ICT" name="submitOrder" data-provider="GetData" finished-at="2025-08-07T10:45:34 ICT" duration-ms="6957" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of Submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from Ecommerce Website"]]>
+                <![CDATA[{password=Iamking@000, product=ADIDAS ORIGINAL, email=Huong1@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@79d8407f]" started-at="2025-08-04T17:38:22 ICT" name="tearDownClass" finished-at="2025-08-04T17:38:22 ICT" duration-ms="101" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:34 ICT" name="tearDown" finished-at="2025-08-07T10:45:35 ICT" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Cucumber.TestNGTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:35 ICT" name="launchApplication" finished-at="2025-08-07T10:45:42 ICT" duration-ms="7390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:42 ICT" name="OrderHistoryTest" finished-at="2025-08-07T10:45:44 ICT" depends-on-methods="HuongTestingPractice.Tests.SubmitOrderTest.submitOrder" duration-ms="1606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HuongTestingPractice.Tests.SubmitOrderTest@18317edc]" started-at="2025-08-07T10:45:44 ICT" name="tearDown" finished-at="2025-08-07T10:45:44 ICT" duration-ms="377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- HuongTestingPractice.Tests.SubmitOrderTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>
