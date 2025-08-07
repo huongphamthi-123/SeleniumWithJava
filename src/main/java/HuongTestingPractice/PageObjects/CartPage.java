@@ -27,7 +27,7 @@ public class CartPage extends AbstractComponent {
 		
 		
 		//private By result = By.cssSelector(".ta-results");
-		// comment
+		// comment   sssss
 		
 		public Boolean verifyProductDisplay(String productName) {
 			waitForWebElementToAppear(cartProducts);
