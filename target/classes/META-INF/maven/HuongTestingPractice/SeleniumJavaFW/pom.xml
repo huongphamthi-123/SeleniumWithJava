@@ -192,7 +192,26 @@
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven
 			defaults (may be moved to parent pom) -->
 			<plugins>
-				
+				<plugin>
+					<groupId>org.bsc.maven</groupId>
+					<artifactId>maven-processor-plugin</artifactId>
+					<version>5.0-rc2</version>
+					<executions>
+						<execution>
+							<id>process</id>
+							<goals>
+								<goal>process</goal>
+							</goals>
+							<phase>generate-sources</phase>
+						</execution>
+					</executions>
+					<configuration>
+						<processors>
+							<processor>
+								lombok.launch.AnnotationProcessorHider$AnnotationProcessor</processor>
+						</processors>
+					</configuration>
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
