@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import HuongTestingPractice.Data.DataReader;
 import HuongTestingPractice.PageObjects.CartPage;
 import HuongTestingPractice.PageObjects.CheckoutPage;
 import HuongTestingPractice.PageObjects.ConfirmationPage;
@@ -49,18 +50,24 @@ public class SubmitOrderTest extends BaseTest{
 //		map1.put("email", "Huong@gmail.com");
 //		map1.put("password", "Iamking@000");
 //		map1.put("product", "ZARA COAT 3");
-	
-		List<HashMap<String,String>> map=	getJsonDataToMap(System.getProperty("user.dir") + "/src/test/java/HuongTestingPractice/Data/PurchaseOrder.Json");
+		
+		List<HashMap<String,String>> map = DataReader.getData();
+		//List<HashMap<String,String>> map=	getJsonDataToMap(System.getProperty("user.dir") + "/src/test/java/HuongTestingPractice/Data/PurchaseOrder.Json");
 		return new Object[][] {{map.get(0)}, {map.get(1)}};
 		
 	}
 	
 	@Test(dependsOnMethods={"submitOrder"})
-	public void OrderHistoryTest()
+	public void OrderHistoryTest() throws IOException
 	{
 		ProductCatalogue productCatalogue = landingPage.loginApplication("Huong@gmail.com","Iamking@000");
 		OrderPage orderPage = productCatalogue.goToOrderPage();
 		Assert.assertTrue(orderPage.verifyProductDisplay(productName));
+		List<HashMap<String, String>> data = DataReader.getData();
+		for (HashMap<String, String> h: data) {
+			System.out.println(h.get("email"));
+			System.out.println(h.get("password"));
+		}
 	}
 	
 //	public File getScreenshot(String testCaseName) throws IOException

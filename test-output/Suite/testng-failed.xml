@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="HuongTestingPractice.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Test2(failed)">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
     <classes>
-      <class name="HuongTestingPractice.Tests.ErrorValidation">
+      <class name="HuongTestingPractice.Tests.SubmitOrderTest">
         <methods>
-          <include name="LoginErrorValidation"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
           <include name="launchApplication"/>
+          <include name="OrderHistoryTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- HuongTestingPractice.Tests.ErrorValidation -->
+      </class> <!-- HuongTestingPractice.Tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
